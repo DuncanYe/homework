@@ -13,6 +13,13 @@
   <h3>Result:</h3>
   <div class="result" style="border: 1px solid #ccc; width: 200px; height: 200px;"></div>
 
-  <script></script>
+  <script>
+    $(".form button").on("click", function() {
+      console.log("butoon is clicked");
+      var input = $(".form").find("input").val();
+      console.log(input);
+      $(".result").html(input);
+    })
+  </script>
 </body>
 </html>
