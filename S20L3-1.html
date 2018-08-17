@@ -11,7 +11,18 @@
   <div id="list" class="row"></div>
 
   <script>
-   
+    var i = 1;
+
+    $("#launch").click(function() {
+      $.ajax({
+        url: 'https://uinames.com/api/?ext',
+        method: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          
+        }
+      });
+    });
   </script>
 </body>
 </html>
