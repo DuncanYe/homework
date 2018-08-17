@@ -28,7 +28,11 @@
           newUser.append('<img>');
           newUser.append('<div class="name"></div>');
 
-          
+          newUser.find("p").html('#' + i);
+          newUser.find("img").attr("src", photo);
+          newUser.find(".name").html(name);
+          $('#list').append(newUser);
+          i++;
         }
       });
     });
