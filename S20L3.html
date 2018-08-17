@@ -14,11 +14,12 @@
   <div class="result" style="border: 1px solid #ccc; width: 200px; height: 200px;"></div>
 
   <script>
-    $(".form button").on("click", function() {
+    $(".form button").on("click", function(event) {
       console.log("butoon is clicked");
       var input = $(".form").find("input").val();
       console.log(input);
       $(".result").html(input);
+      console.log(event.target);
     })
   </script>
 </body>
